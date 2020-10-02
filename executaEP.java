@@ -1,5 +1,6 @@
 public class executaEP{
   public static void main(String[] args){
+
     //EXERCICIO 1
       String saidasDir = "./saidas_PilhaIngenua";
       String dadosArqv = "./dados_PilhaIngenua.csv";
@@ -22,5 +23,16 @@ public class executaEP{
       ex2.createFile(dadosArqv);
       //le o diretorio de arquivos de entrada
       ex2.readDirectory(entradasDir, dadosArqv, saidasDir);
+
+    //EXERCICIO EXTRA
+      saidasDir = "./saidas_PilhaArranjo";
+      dadosArqv = "./dados_PilhaArranjo.csv";
+
+      //cria o diretório onde ficarão os arquivos de saida
+      exExtra.createDirectory(saidasDir);
+      //cria o arquivo para centralizar os dados de tamanho e tempo
+      exExtra.createFile(dadosArqv);
+      //le o diretorio de arquivos de entrada
+      exExtra.readDirectory(entradasDir, dadosArqv, saidasDir);
   }
 }
