@@ -51,7 +51,7 @@ public class ex2{
       //comeca a contar o tempo
       inicio = System.currentTimeMillis();
 
-      //zera a PilhaIngenua
+      //zera a Lista Ligada
       list = new SLinkedList();
 
       //itera no arquivo de entradas

@@ -9,7 +9,7 @@ import java.lang.*;
 public class exExtra{
   protected static ArrayStack pile;
 
-  static void pile_control(String line, String saidaArqv){
+  static void stack_control(String line, String saidaArqv){
     if(line.isEmpty() && pile.size() > 1){
       String aux = pile.pop() + "\n";
       writeToFile(aux, saidaArqv);}
@@ -33,7 +33,7 @@ public class exExtra{
       Scanner myReader = new Scanner(entradaArqv);
       while(myReader.hasNext()) {
         aux = myReader.nextLine();
-        pile_control(aux, saidaArqv);}
+        stack_control(aux, saidaArqv);}
       myReader.close();}
     catch(FileNotFoundException e) {
       e.printStackTrace();}
@@ -51,7 +51,7 @@ public class exExtra{
       //comeca a contar o tempo
       inicio = System.currentTimeMillis();
 
-      //zera a PilhaIngenua
+      //zera a arrayStack
       pile = new ArrayStack();
 
       //itera no arquivo de entradas
