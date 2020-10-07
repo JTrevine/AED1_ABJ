@@ -10,7 +10,7 @@ public class ex2{
   protected static SLinkedList list;
 
   static void list_control(String line, String saidaArqv){
-    if(line.isEmpty() && list.size > 1){
+    if(line.isEmpty() && list.size > 0){
       String aux = list.remove().getElement() + "\n";
       writeToFile(aux, saidaArqv);}
     else{
