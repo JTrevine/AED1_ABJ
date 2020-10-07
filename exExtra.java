@@ -10,7 +10,7 @@ public class exExtra{
   protected static ArrayStack pile;
 
   static void stack_control(String line, String saidaArqv){
-    if(line.isEmpty() && pile.size() > 1){
+    if(line.isEmpty() && pile.size() > 0){
       String aux = pile.pop() + "\n";
       writeToFile(aux, saidaArqv);}
     else{
