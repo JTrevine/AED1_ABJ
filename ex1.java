@@ -12,7 +12,7 @@ public class ex1{
 
   static void pile_control(String line, String saidaArqv){
     if(line.isEmpty()){
-      if(pileCounter > 1){
+      if(pileCounter > 0){
       String aux = Integer.toString(pile.remove()) + "\n";
       writeToFile(aux, saidaArqv);
       pileCounter--; }}
